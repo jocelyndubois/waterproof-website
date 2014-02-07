@@ -1,0 +1,8 @@
+water_proof_website:
+    resource: "@WaterProofWebsiteBundle/Controller/"
+    type:     annotation
+    prefix:   /
+
+_imagine:
+    resource: .
+    type:     imagine
