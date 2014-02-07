@@ -4,10 +4,10 @@
 <div class="container">
     <div class="margin-bottom-20"></div>
     <div class="tag-box tag-box-v2">
-        <p>Notre réseau est composé de nombreux talents que vous pouvez découvrir ci-dessous. N'hésitez pas à les contacter directement ou à venir les rencontrer lors d'un de nos événements.</p>
+        <p>Notre équipe est composée d'une équipe jeune et dynamique capable de répondre à vos différentes problématiques web.</p>
     </div>
 
-    <div class="headline"><h2>Capitaines</h2></div>
+    <div class="headline"><h2>CEO</h2></div>
     <div class="row team margin-bottom-20">
         {% include 'WaterProofWebsiteBundle:Team:index_box.html.twig' with {
         	details: 'team_shordeaux',
@@ -19,33 +19,29 @@
         	twitter: 'shordeaux'
 
 		} %}
-        {% include 'WaterProofWebsiteBundle:Team:index_box.html.twig' with {
-        	details: 'team_cbarragan',
-			picture: ('/bundles/capitaineriecore/images/cbarragan.png'| apply_filter('small')),
-			name: 'Cyril Barragan',
-        	company: 'WaterProof',
-        	description: 'Création d\'applications web sur mesure',
 
-		} %}
-        {% include 'WaterProofWebsiteBundle:Team:index_box.html.twig' with {
-        	details: 'team_jdubois',
-			picture: ('/bundles/capitaineriecore/images/jdubois.png'| apply_filter('small')),
-        	name: 'Jocelyn Dubois',
-        	company: 'WaterProof',
-        	description: 'Création d\'applications web sur mesure',
-        	twitter: 'DjodjinoOurs',
-        	google_plus: 'JocelynDUBOIS'
-
-		} %}
-        {% include 'WaterProofWebsiteBundle:Team:index_box.html.twig' with {facebook: false, twitter: false, google_plus: false} %}
     </div>
-    <div class="headline"><h2>Lieutenants</h2></div>
+    <div class="headline"><h2>Dévelopeurs</h2></div>
     <div class="row team margin-bottom-20">
-        {% include 'WaterProofWebsiteBundle:Team:index_box.html.twig' with {facebook: false, twitter: false, google_plus: false} %}
-    </div>
+        {% include 'WaterProofWebsiteBundle:Team:index_box.html.twig' with {
+        details: 'team_cbarragan',
+        picture: ('/bundles/capitaineriecore/images/cbarragan.png'| apply_filter('small')),
+        name: 'Cyril Barragan',
+        company: 'WaterProof',
+        description: 'Création d\'applications web sur mesure',
 
-    <div class="headline"><h2>Matelots</h2></div>
-    <div class="row team margin-bottom-20">
+        } %}
+        {% include 'WaterProofWebsiteBundle:Team:index_box.html.twig' with {
+        details: 'team_jdubois',
+        picture: ('/bundles/capitaineriecore/images/jdubois.png'| apply_filter('small')),
+        name: 'Jocelyn Dubois',
+        company: 'WaterProof',
+        description: 'Création d\'applications web sur mesure',
+        twitter: 'DjodjinoOurs',
+        google_plus: 'JocelynDUBOIS'
+
+        } %}
+
         {% include 'WaterProofWebsiteBundle:Team:index_box.html.twig' with {facebook: false, twitter: false, google_plus: false} %}
     </div>
 

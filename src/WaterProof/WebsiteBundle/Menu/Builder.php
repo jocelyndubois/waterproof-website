@@ -12,7 +12,7 @@ class Builder extends ContainerAware {
 
         $homeMenu = $menu->addChild('A propos');
     	$homeMenu->addChild('Qui sommes nous?', array('route' => 'homepage'));
-    	$homeMenu->addChild('Qu\'est ce que le coworking?', array('route' => 'homepage'));
+    	$homeMenu->addChild('Ce que nous proposons', array('route' => 'homepage'));
     	$placeMenu = $menu->addChild('Le lieu', array('route' => 'place'));
         $placeMenu->addChild('Découvez le lieu', array('route' => 'place'));
         $placeMenu->addChild('Espace 1', array('route' => 'homepage'));
@@ -22,7 +22,7 @@ class Builder extends ContainerAware {
         $placeMenu->addChild('Accès', array('route' => 'homepage'));
 
         $menu->addChild('Tarifs', array('route' => 'prices'));
-        $menu->addChild('Co-workers', array('route' => 'team'));
+        $menu->addChild('L\'équipe', array('route' => 'team'));
         $menu->addChild('FAQ', array('route' => 'faq'));
         $menu->addChild('Contact', array('route' => 'contact'));
 
